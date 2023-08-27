@@ -1,3 +1,22 @@
-.menu{
-    background-color: red;
+@import url(../../styles/variable.scss);
+
+.menu {
+  background-color: red;
+
+  .title {
+    color: #ddd;
+  }
+
+  .link-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.3s; /* Add a smooth transition effect for color change */
+
+  
+
+    .icon {
+      margin-top: 2px;
+    }
+  }
 }

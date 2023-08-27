@@ -4,7 +4,9 @@ import React from 'react';
 // import './'
 const Footer=()=> {
     return(<div className='Footer '  >
-Footer
+<span>Abdullah </span>
+<span>Copyrights Rights © Admin DashBoard</span>    
+
     </div>);
 }
 

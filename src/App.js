@@ -1,15 +1,15 @@
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 // import "./App.css";
 import Home from "./pages/home/home";
 import Users from "./pages/users/users";
 import Products from "./pages/products/products";
 import * as React from "react";
-import { createRoot } from "react-dom/client";
+// import { createRoot } from "react-dom/client";
 import {
   createBrowserRouter,
   RouterProvider,
   // Route,
-  Link,
+  // Link,
   Outlet
 } from "react-router-dom";
 import Footer from "./components/footer/footer";
@@ -28,7 +28,7 @@ function App() {
       <Navbar/>
       <div className="contianer ">
   
-  <div className="menuContainer">
+  <div className="menuContainer pt-5 pr-40 ">
   <Menu/>
   </div>
   <div className="contentContainer " >
