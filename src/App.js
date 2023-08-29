@@ -26,9 +26,9 @@ function App() {
   const Layout = () => {
     return <div className="main ">
       <Navbar/>
-      <div className="contianer ">
+      <div className="contianer flex ">
   
-  <div className="menuContainer pt-5 pr-40 ">
+  <div className="menuContainer   ">
   <Menu/>
   </div>
   <div className="contentContainer " >
