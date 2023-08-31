@@ -6,18 +6,14 @@ import Chartbox, {
 import Topbox from "../../components/topbox/topbox";
 import "./home.scss";
 import {
-  PieChart,
-  Pie,
-  Sector,
+ 
   Tooltip,
-  area,
   AreaChart,
   Area,
   CartesianGrid,
   XAxis,
   YAxis,
-  Cell,
-  ResponsiveContainer,
+  
 } from "recharts";
 let total = 0;
 
