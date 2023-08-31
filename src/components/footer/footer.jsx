@@ -1,13 +1,14 @@
-import './footer.scss'
-import React from 'react';
+import "./footer.scss";
+import React from "react";
 // import 'adminui\src\index.css';
 // import './'
-const Footer=()=> {
-    return(<div className='Footer '  >
-<span>Abdullah </span>
-<span>Copyrights Rights © Admin DashBoard</span>    
+const Footer = () => {
+  return (
+    <div className="Footer ">
+      <span>Abdullah </span>
+      <span>Copyrights Rights © Admin DashBoard</span>
+    </div>
+  );
+};
 
-    </div>);
-}
-
-export default Footer
+export default Footer;
