@@ -2,18 +2,18 @@ import Chartbox, {
   data,
   data01,
   data02,
+  datapie,
 } from "../../components/chartbox/chartbox";
+import ChartComponent from "../../components/chartbox/linepiechart";
 import Topbox from "../../components/topbox/topbox";
 import "./home.scss";
 import {
- 
   Tooltip,
   AreaChart,
   Area,
   CartesianGrid,
   XAxis,
   YAxis,
-  
 } from "recharts";
 let total = 0;
 
@@ -29,7 +29,7 @@ for (const item of data01) {
 const Home = () => {
   return (
     <div className="home   h-full ">
-      <div class=" grid w-full      grid-cols-[repeat(4,1fr)]  grid-rows-[3,minmax(180px,auto)] gap-4 p-8">
+      <div class=" grid w-full      grid-cols-[repeat(4,1fr)]  grid-rows-[3,minmax(180px,auto)] gap-4 ">
         <div className="row-span-3 border  rounded col-span-1  ">
           <Topbox />
         </div>
@@ -55,14 +55,9 @@ const Home = () => {
             amount={total01}
           />
         </div>
-        <div className=" border rounded row-span-3">
+        <div className=" border rounded row-span-3 relative">
           {/* <Chartbox /> */}{" "}
-          <Chartbox
-            chartDataKey="value"
-            data={data02}
-            stroke="#8884d8"
-            chartType="pie"
-          />
+          <ChartComponent datapie={datapie} chartType="pie" />
         </div>
         <div className=" border rounded">
           {/* <Chartbox /> */}{" "}
@@ -142,9 +137,18 @@ const Home = () => {
             bar="block mt-2  pt-2 pl-12  "
           />
         </div>
-        <div className=" border row-span-2"></div>
-
-        <div className="border ">09</div>
+        <div className=" border row-span-2">
+          <Chartbox
+            chartDataKey="value"
+            data={data02}
+            height={100}
+            width={280}
+            stroke="#91FF00"
+            chartType="bar"
+            amount={total}
+            bar="block mt-2  pt-2 pl-12  "
+          />
+        </div>
       </div>
     </div>
   );
