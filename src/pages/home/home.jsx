@@ -26,10 +26,10 @@ for (const item of data01) {
   total01 += item.value;
 }
 
-const Home = () => {
+const Home = () => {  
   return (
     <div className="home   h-full ">
-      <div class=" grid w-full      grid-cols-[repeat(4,1fr)]  grid-rows-[3,minmax(180px,auto)] gap-4 ">
+      <div class=" grid     lg:grid-cols-[repeat(4,1fr)]  lg:grid-rows-[3,minmax(180px,auto)] md:grid-cols-2 gap-4 lg:mx-5 md:mx-3 sm:mr-10 sm:grid-col-2">
         <div className="row-span-3 border  rounded col-span-1  ">
           <Topbox />
         </div>
@@ -55,7 +55,7 @@ const Home = () => {
             amount={total01}
           />
         </div>
-        <div className=" border rounded row-span-3 relative">
+        <div className=" border rounded  row-span-3 ">
           {/* <Chartbox /> */}{" "}
           <ChartComponent datapie={datapie} chartType="pie" />
         </div>
@@ -84,7 +84,7 @@ const Home = () => {
           />
         </div>
 
-        <div className=" border row-span-2 col-span-2   text-left font-bold text-2xl rounded  pl-3">
+        <div className=" border row-span-2 lg:col-span-2 md:col-span-2 sm:col-span-1  text-left font-bold text-2xl rounded  pl-3">
           Revenue Analytics
           <AreaChart
             width={500}
@@ -130,14 +130,15 @@ const Home = () => {
             chartDataKey="value"
             data={data02}
             height={100}
-            width={300}
+            width={280}
             stroke="#8884d8"
             chartType="bar"
             amount={total}
             bar="block mt-2  pt-2 pl-12  "
           />
         </div>
-        <div className=" border row-span-2">
+        <div className=" border row-span-2 text-left font-bold text-2xl rounded pl-3">
+        Total Views
           <Chartbox
             chartDataKey="value"
             data={data02}

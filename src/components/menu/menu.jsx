@@ -16,122 +16,120 @@ import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined
 import SettingsSuggestOutlinedIcon from "@mui/icons-material/SettingsSuggestOutlined";
 const Menu = () => {
   return (
-    <aside className="   border-r-slate-500 border-r-2 ">
-      <nav className="space-y-8 text-sm ">
-        <div className="space-y-4 ">
-          <h2 className="light: text-slate-300 text-sm  py-2  pl-5 tracki border-b border-slate-500 border-double ">
+    <aside className="   border-r-slate-500 border-r-2 sm:mr-15 sm:pr-14">
+      <nav className="lg:space-y-8 md:space-y-0 text-sm sm:ml-3">
+        <div className="lg:space-y-4 md:space-y-1  ">
+          <div className="light: text-slate-300 lg:text-sm md:text-sm sm:text-xs py-2  lg:pl-5 md:pl-5 sm:font-thin sm:pl-0 tracki border-b border-slate-500 border-double ">
             menu
-          </h2>
-          <div className="flex flex-col space-y-2 ml-4">
+          </div>
+          <div className="flex flex-col space-y-2 lg:ml-4 md:my-10 md:mx-0 sm:ml-0 ">
             <Link
               to={"/"}
-              className="icon-container hover:bg-gray-700 m-0 py-2 px-2 rounded light: text-white"
+              className="icon-container hover:bg-gray-700  md:text-xs sm:text-xs sm:m-0  lg:py-2 lg:px-2 sm:px-0 md:p-1 rounded light: text-white"
             >
-              <HomeOutlinedIcon /> User
+              <HomeOutlinedIcon className="hover:bg-gray-700 hover:rounded" />{" "}
+              <span>User</span>
             </Link>
             <Link
               to={"/"}
-              className="icon-container hover:bg-gray-700 m-0 py-2 px-2 rounded light: text-white"
+              className="icon-container hover:bg-gray-700 m-0 md: text-xs lg:py-2 lg:px-2 md:p-1 rounded light: text-white"
             >
               <PeopleAltOutlinedIcon /> Profile
             </Link>
           </div>
         </div>
-        <div className="space-y-4">
-          <h2 className="light: text-slate-300 text-sm   py-2  tracki pl-5 border-b border-slate-500 border-double ">
+        <div className="lg:space-y-4 md:space-y-1  ">
+          <div className="light: text-slate-300 lg:text-sm md:text-sm sm:text-xs py-2  lg:pl-5 md:pl-5 sm:font-thin sm:pl-0 tracki border-b border-slate-500 border-double ">
             lists
-          </h2>
-          <div className="flex flex-col space-y-2  ml-4 ">
+          </div>
+          <div className="flex flex-col space-y-2 lg:ml-4 md:my-10 md:mx-0 sm:ml-0 ">
             <Link
               to={"/"}
-              className="icon-container hover:bg-gray-700 m-0 py-2 px-2 rounded light: text-white"
+              className="icon-container hover:bg-gray-700  md:text-xs sm:text-xs sm:m-0  lg:py-2 lg:px-2 sm:px-0 md:p-1 rounded light: text-white"
             >
               <PeopleAltOutlinedIcon /> Users
             </Link>
             <Link
               to={"/"}
-              className="icon-container hover:bg-gray-700 m-0 py-2 px-2 rounded light: text-white"
+              className="icon-container hover:bg-gray-700 m-0 md: text-xs lg:py-2 lg:px-2 md:p-1 rounded light: text-white"
             >
               <LocalGroceryStoreOutlinedIcon /> Products
             </Link>
             <Link
               to={"/"}
-              className="icon-container hover:bg-gray-700 m-0 py-2 px-2 rounded light: text-white"
+              className="icon-container hover:bg-gray-700 m-0 md: text-xs lg:py-2 lg:px-2 md:p-1 rounded light: text-white"
             >
               <ContentPasteOutlinedIcon /> Orders
             </Link>
-            <Link
-              to={"/"}
-              className="icon-container hover:bg-gray-700 m-0 py-2 px-2 rounded light: text-white"
-            >
+            <Link to={"/"}>
               <ContentCopyOutlinedIcon /> Posts
             </Link>
           </div>
         </div>
-        <div className="space-y-4">
-          <h2 className=" light: text-slate-300 text-sm pl-5  py-2  tracki border-b border-slate-500 border-double ">
+        <div className="lg:space-y-4 md:space-y-1  ">
+          <div className="light: text-slate-300 lg:text-sm md:text-sm sm:text-xs py-2  lg:pl-5 md:pl-5 sm:font-thin sm:pl-0 tracki border-b border-slate-500 border-double ">
             general
-          </h2>
-          <div className="flex flex-col space-y-2 ml-4">
+          </div>
+          <div className="flex flex-col space-y-2 lg:ml-4 md:my-10 md:mx-0 sm:ml-0 ">
             <Link
               to={"/"}
-              className="icon-container hover:bg-gray-700 m-0 py-2 px-2 rounded light: text-white"
+              className="icon-container hover:bg-gray-700 m-0 md: text-xs lg:py-2 lg:px-2 md:p-1 rounded light: text-white"
             >
               <GridViewOutlinedIcon /> Elements
             </Link>
             <Link
               to={"/"}
-              className="icon-container hover:bg-gray-700 m-0 py-2 px-2 rounded light: text-white"
+              className="icon-container hover:bg-gray-700 m-0 md: text-xs lg:py-2 lg:px-2 md:p-1 rounded light: text-white"
             >
               <EditNoteOutlinedIcon /> Notes
             </Link>
             <Link
               to={"/"}
-              className="icon-container hover:bg-gray-700 m-0 py-2 px-2 rounded light: text-white"
+              className="icon-container hover:bg-gray-700 m-0 md: text-xs lg:py-2 lg:px-2 md:p-1 rounded light: text-white"
             >
               <SubjectOutlinedIcon /> Forms
             </Link>
             <Link
               to={"/"}
-              className="icon-container hover:bg-gray-700 m-0 py-2 px-2 rounded light: text-white"
+              className="icon-container hover:bg-gray-700 m-0 md: text-xs lg:py-2 lg:px-2 md:p-1 rounded light: text-white"
             >
               <CalendarMonthOutlinedIcon /> Forms
             </Link>
           </div>
         </div>
-        <div className="space-y-4">
-          <h2 className=" light: text-slate-300 text-sm  pl-5 py-2 tracki border-b border-slate-500  border-double">
+        <div className="lg:space-y-4 md:space-y-1  ">
+          <div className="light: text-slate-300 lg:text-sm md:text-sm sm:text-xs py-2  lg:pl-5 md:pl-5 sm:font-thin sm:pl-0 tracki border-b border-slate-500 border-double ">
             maintenence
-          </h2>
-          <div className="flex flex-col space-y-2 ml-4">
+          </div>
+          <div className="flex flex-col space-y-2 lg:ml-4 md:my-10 md:mx-0 sm:ml-0 ">
             <Link
               to={"/"}
-              className="icon-container hover:bg-gray-700 m-0 py-2 px-2 rounded light: text-white"
+              className="icon-container hover:bg-gray-700 m-0 md: text-xs lg:py-2 lg:px-2 md:p-1 rounded light: text-white"
             >
               <SettingsSuggestOutlinedIcon /> Settings
             </Link>
             <Link
               to={"/"}
-              className="icon-container hover:bg-gray-700 m-0 py-2 px-2 rounded light: text-white"
+              className="icon-container hover:bg-gray-700 m-0 md: text-xs lg:py-2 lg:px-2 md:p-1 rounded light: text-white"
             >
               <BackupOutlinedIcon /> Backups
             </Link>
           </div>
-        </div>
-        <div className="space-y-4">
-          <h2 className=" light: text-slate-300 text-sm  pl-5 py-2 tracki border-b border-slate-500  border-double">
+        </div>{" "}
+        <div className="lg:space-y-4 md:space-y-1  ">
+          <div className="light: text-slate-300 lg:text-sm md:text-sm sm:text-xs py-2  lg:pl-5 md:pl-5 sm:font-thin sm:pl-0 tracki border-b border-slate-500 border-double ">
             analytics
-          </h2>
-          <div className="flex flex-col space-y-2 ml-4">
+          </div>
+          <div className="flex flex-col space-y-2 lg:ml-4 md:my-10 md:mx-0 sm:ml-0 ">
             <Link
               to={"/"}
-              className="icon-container hover:bg-gray-700 m-0 py-2 px-2 rounded light: text-white"
+              className="icon-container hover:bg-gray-700 m-0 md: text-xs lg:py-2 lg:px-2 md:p-1 rounded light: text-white"
             >
               <BarChartOutlinedIcon /> Charts
             </Link>
             <Link
               to={"/"}
-              className="icon-container hover:bg-gray-700 m-0 py-2 px-2 rounded light: text-white"
+              className="icon-container hover:bg-gray-700 m-0 md: text-xs lg:py-2 lg:px-2 md:p-1 rounded light: text-white"
             >
               <StickyNote2OutlinedIcon /> Logs
             </Link>

@@ -26,11 +26,11 @@ function App() {
     return (
       <div className="main ">
         <Navbar />
-        <div className="contianer  grid grid-cols-12  ">
-          <div className="menuContainer  lg:mx-10 sm:mx-0  col-span-2  s">
+        <div className="contianer  grid grid-cols-12 ml-0 ">
+          <div className="menuContainer  lg:mx-10 md:mx-0 sm:mx-0  lg:col-span-2 md:col-span-1  sm:col-span-1">
             <Menu />
           </div>
-          <div className="contentContainer  rounded  lg:col-span-10    mr-10 p-10 ">
+          <div className="contentContainer  rounded  lg:col-span-10 md:col-span-11 sm:col-span-11 lg:ml-10  ">
             <Outlet />
           </div>
         </div>

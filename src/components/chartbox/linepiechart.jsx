@@ -50,13 +50,13 @@ function ChartComponent(props = Props) {
         <PieChart
           width={200}
           height={500}
-          className=" pb-20 bottom-32  row-span-1 ml-28  justify-content: center"
+          className=" pb-20 bottom-32 top-10  row-span-1 ml-28  justify-content: center"
         >
           <Pie
             data={props.datapie}
             cx={90}
             cy={300}
-            innerRadius={20}
+            innerRadius={20}    
             outerRadius={80}
             fill="#8884d8"
             paddingAngle={5}
